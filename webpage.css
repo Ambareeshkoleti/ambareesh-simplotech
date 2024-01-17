@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #ff7171;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 10px 10px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.nav-links a {
+    color: black;
+    letter-spacing: 0px;
+}
+
+.nav-links img {
+    height: 40px;
+    margin: -5px;
+    padding: 0px;
+}
+
+
+
+.div1 {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 2.5em;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+.menu li {
+    padding: 0 10px 0 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.section2 {
+    display: flex;
+    height: auto;
+}
+
+.container1 {
+
+    padding: 100px 50px 300px 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: rgb(255, 247, 173);
+    background: linear-gradient(80deg, rgba(255, 247, 173, 1) 0%, rgba(255, 209, 210, 1) 100%);
+    height: auto;
+
+
+}
+
+.container1 H1 {
+    font-family: Roboto;
+    font-size: 80PX;
+    margin: 30px 0px;
+
+}
+
+.container1 p {
+    font-family: Sans-Serif;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.container1 button {
+    background-color: #ff7171;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px;
+    margin: 30px 0px 0px 0px;
+    border: 0px;
+
+}
+
+.container2 {
+
+    background-image: url("https://res.cloudinary.com/dusmkpaaj/image/upload/v1705475884/pexels-robin-stickel-70497_mjz1w7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+}
+
+.page2 {
+    background: rgb(255, 246, 173);
+    background: linear-gradient(140deg, rgba(255, 246, 173, 1) 0%, rgba(255, 180, 238, 1) 100%);
+    height: auto;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.location img {
+    width: 250px;
+    height: 250px;
+    margin: 5px 0px;
+    object-fit: cover;
+}
+
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    height: 100vh;
+    padding: 100px 10px 100px 100px;
+}
+
+.foodtable img {
+    width: 250px;
+    height: 510px;
+    object-fit: fill;
+
+}
+
+.foodtable {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.lorem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    width: 500px;
+    height: auto;
+    background-color: #ff7171;
+    padding: 30px;
+}
+
+.lorem button img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.lorem button {
+    background-color: transparent;
+    align-self: flex-start;
+    border: 0px;
+    font-size: 20px;
+    height: 80px;
+    text-align: center;
+}
+
+.lorem h1 {
+    font-size: 50px;
+}
+
+.lorem p {
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+li:hover {
+    background-color: #fff6ad;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        background-color: rgba(255, 255, 255, 0.768);
+        z-index: 2;
+
+    }
+
+    .navbar {
+        justify-content: flex-end;
+        background-color: #ff7171;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+        color: wheat;
+    }
+
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: flex-end;
+        color: black;
+    }
+
+    .section2 {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    .container1 {
+        height: auto;
+        width: 100vh;
+    }
+
+    .container2 {
+        width: 100vh;
+        height: 400px;
+    }
+
+    .page2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .location {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .location img {
+        width: 500px;
+        object-fit: cover;
+        order: 1;
+        margin: 10px;
+    }
+
+    .foodtable img {
+        width: 500px;
+        order: 3;
+        object-fit: cover;
+
+    }
+
+    .lorem {
+        order: 2;
+    }
+
+    li img {
+        display: none;
+    }
+
+}
