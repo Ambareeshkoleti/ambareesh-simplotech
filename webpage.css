@@ -251,6 +251,7 @@ li:hover {
         color: black;
     }
 
+
     .section2 {
         flex-direction: column-reverse;
         width: 100%;
@@ -258,12 +259,12 @@ li:hover {
     }
 
     .container1 {
-        height: auto;
-        width: 100vh;
+        height: 600px;
+        width: 100%;
     }
 
     .container2 {
-        width: 100vh;
+        width: 100%;
         height: 400px;
     }
 
@@ -271,6 +272,7 @@ li:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
     }
 
@@ -304,4 +306,29 @@ li:hover {
         display: none;
     }
 
+    .container1 H1 {
+        font-size: 40PX;
+    }
+
+    .container1 p {
+        font-size: 20px;
+    }
+
+    .lorem h1 {
+        font-size: 40px;
+    }
+
+    .lorem p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .lorem button {
+        font-size: 18px;
+    }
+
+    .lorem button img {
+        width: 20px;
+        height: 20px;
+    }
 }
