@@ -18,12 +18,11 @@ li {
     display: flex;
     align-items: center;
     background-color: #ff7171;
-    justify-content: center;
-    align-content: center;
-    padding: 20px 10px 10px 10px;
-    position: fixed;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 10px 10px 10px 10px;
     width: 100%;
-    z-index: 1;
+
 
 
 }
@@ -47,9 +46,12 @@ li {
 
 .menu {
     display: flex;
-    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     font-weight: bold;
+    width: 100%;
+    gap: 1em;
 
 
 }
@@ -205,7 +207,7 @@ li:hover {
 
 }
 
-
+li img {}
 
 
 
@@ -254,18 +256,19 @@ li:hover {
 
     .section2 {
         flex-direction: column-reverse;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
     .container1 {
-        height: 600px;
+        height: auto;
         width: 100%;
     }
 
     .container2 {
-        width: 100%;
+        width: auto;
         height: 400px;
+
     }
 
     .page2 {
@@ -277,24 +280,25 @@ li:hover {
     }
 
     .location {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 0px;
-        padding: 0px;
+        margin: 5px;
+        padding: 10px;
     }
 
     .location img {
-        width: 500px;
-        object-fit: cover;
-        order: 1;
-        margin: 10px;
+        width: auto;
+        object-fit: contain;
+        padding: 10px;
     }
 
     .foodtable img {
-        width: 500px;
-        order: 3;
+        width: auto;
+        height: 300px;
+
         object-fit: cover;
+        margin: 10px;
 
     }
 
@@ -307,28 +311,34 @@ li:hover {
     }
 
     .container1 H1 {
-        font-size: 40PX;
+        font-size: 30PX;
     }
 
     .container1 p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .lorem h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .lorem p {
-        font-size: 20px;
+        font-size: 10px;
         margin-bottom: 10px;
+
     }
 
     .lorem button {
-        font-size: 18px;
+        font-size: 10px;
     }
 
     .lorem button img {
         width: 20px;
         height: 20px;
     }
+
+    .lorem {
+        width: auto;
+    }
+
 }
